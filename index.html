@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calcolatore Tariffe Treno</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   <section>
+      <div class="container py-4 bg-danger">
+         <div class="row">
+            <div class="col">
+               <h2 class="text-white m-0 text-center">Calcola la tariffa del tuo biglietto ferroviario</h2>
+            </div>
+         </div>
+      </div>
+      <div class="container py-4">
+         <div class="row">
+            <div class="col">
+               <form class="row g-3" action="" method="post">
+                  <div class="col-md-6">
+                     <label for="Kilometers" class="form-label px-2">Chilometri della tratta</label>
+                     <input type="text" class="form-control" id="Kilometers" placeholder="Inserisci i km da percorrere">
+                  </div>
+                  <div class="col-md-6">
+                     <label for="Age" class="form-label px-2">Età del viaggiatore</label>
+                     <input type="text" class="form-control" id="Age" placeholder="Inserisci la tua età">
+                  </div>
+                  <div class="col-12">
+                     <button type="submit" class="btn btn-primary">Calcola Tariffa</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="container w-50 bg-info-subtle">
+         <div class="row">
+            <div class="col">
+               <p>La tariffa del tuo biglietto ferroviario è di: </p>
+               <p class="text-center text-danger" id="tariffa"></p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="./app.js"></script>
+</body>
+</html>
