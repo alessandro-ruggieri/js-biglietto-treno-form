@@ -18,14 +18,18 @@
       <div class="container py-4">
          <div class="row">
             <div class="col">
-               <form class="row g-3" action="" method="post">
+               <form id="form-tariffa" class="row g-3">
                   <div class="col-md-6">
                      <label for="Kilometers" class="form-label px-2">Chilometri della tratta</label>
                      <input type="text" class="form-control" id="Kilometers" placeholder="Inserisci i km da percorrere">
                   </div>
                   <div class="col-md-6">
-                     <label for="Age" class="form-label px-2">Età del viaggiatore</label>
-                     <input type="text" class="form-control" id="Age" placeholder="Inserisci la tua età">
+                     <label for="Discount" class="form-label px-2">Seleziona la tipologia di sconto</label>
+                     <select id ="Discount" class="form-select" aria-label="Seleziona la tipologia di sconto">
+                        <option selected value="1">Nessuno: età compresa tra i 18 e i 64 anni</option>
+                        <option value="2">Sconto Minorenni: età inferiore ai 18 anni</option>
+                        <option value="3">Sconto Over65: età pari o superiore a 65 anni</option>
+                      </select>
                   </div>
                   <div class="col-12">
                      <button type="submit" class="btn btn-primary">Calcola Tariffa</button>
